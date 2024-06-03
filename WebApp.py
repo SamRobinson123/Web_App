@@ -17,9 +17,17 @@ def fetch_readme():
 def home():
     return render_template("index.html")
 
-@app.route("/test")
-def test():
-    return render_template("new.html")
+@app.route("/default-model")
+def default_model():
+    readme_content = fetch_readme()
+    return render_template("default_model.html", readme_content=readme_content)
+
+@app.route("/<username>")
+def user(username):
+    return f"<h1>{username}</h1>"
+
+if __name__ == "__main__":
+    app.run(debug=True)
 
 @app.route("/login", methods=["POST", "GET"])
 def login():
