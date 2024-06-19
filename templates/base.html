@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>{% block title %}{% endblock %}</title>
     <style>
@@ -9,17 +11,36 @@
             filter: invert(100%);
         }
         .carousel-inner img {
+<<<<<<< HEAD
             height: 400px; /* Set the height to 400px */
             width: auto; /* Adjust the width automatically to maintain aspect ratio */
             object-fit: cover; /* Ensure the image covers the container without distortion */
+=======
+            height: 400px;
+            width: auto;
+            object-fit: cover;
+        }
+        .navbar-brand {
+            font-weight: bold;
+        }
+        body {
+            padding-top: 56px; /* Adjust the padding to match the height of the navbar */
+>>>>>>> 3c4e2eb9539769fdff6479ce62d65e7d8ef088db
         }
     </style>
 </head>
 <body>
+<<<<<<< HEAD
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+=======
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Sam Robinson</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+>>>>>>> 3c4e2eb9539769fdff6479ce62d65e7d8ef088db
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -30,6 +51,12 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/default-model">Probability of Default Model</a>
                     </li>
+<<<<<<< HEAD
+=======
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact</a>
+                    </li>
+>>>>>>> 3c4e2eb9539769fdff6479ce62d65e7d8ef088db
                 </ul>
             </div>
         </div>
