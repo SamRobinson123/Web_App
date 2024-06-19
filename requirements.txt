@@ -1,4 +1,10 @@
-Flask==1.1.2
+Flask==2.1.2
 requests
 markdown
 gunicorn
+jinja2>=3.0
+markupsafe>=2.0
+urllib3==1.26.14
+Werkzeug==2.0.3
+
+
